@@ -1,0 +1,92 @@
+.navbar .btn {
+  margin-right: 4px;
+}
+Nav {
+  font-size: 20px;
+  font-weight: 400;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.input-field {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+  background-color: #f0f0f0;
+  line-height: 55px;
+
+  border-radius: 15px;
+
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  width: 400px;
+  text-align: center;
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  text-align: center;
+  color: #aaa;
+  font-weight: 700;
+}
+
+.btn {
+  padding-bottom: 10px;
+  width: 150px;
+  background-color: #515ae0;
+  border: none;
+  outline: none;
+  height: 35px;
+  border-radius: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #4d84e2;
+  background-position: right;
+}
+.cd {
+  margin: auto;
+  /* box-shadow: 0px 0px 15px 1px black; */
+  transition: 0.3s;
+}
+.cd :hover {
+  transform: scale(1.03);
+  z-index: 1;
+}
