@@ -16,7 +16,7 @@ function Dashboard() {
 
   var [jsonAry, fillJsonArray] = useState([{ uid: "Aman" }]);
   async function fetchAll() {
-    var url = "http://localhost:8000/medicine/fetch-all";
+    var url = "/api/react/medicine/fetch-all";
     var response = await axios.post(url, us);
     fillJsonArray(response.data);
   }
@@ -44,12 +44,12 @@ function Dashboard() {
     handleShow();
   }
   function logout() {
+    window.localStorage.href = "/home";
     window.localStorage.clear();
-    window.localStorage.href = "/";
   }
   useEffect(() => {
     if (window.localStorage.getItem("user") == null) {
-      window.location.href = "/";
+      window.location.href = "/home";
     }
   }, []);
   return (
@@ -144,13 +144,13 @@ function Dashboard() {
                 <Card.Img
                   variant="top"
                   className="mt-1"
-                  src="imgs/manager.svg"
+                  src="imgs/logout.svg"
                   height="200px"
                   width="16rem"
                 />
                 <Card.Body>
-                  <Card.Title>Medicine Manager</Card.Title>
-                  <Card.Text>Manage your donated medicines</Card.Text>
+                  <Card.Title>Logout</Card.Title>
+                  <Card.Text></Card.Text>
                   <center>
                     <Button variant="primary" onClick={logout}>
                       Logout

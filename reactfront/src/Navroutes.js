@@ -11,6 +11,7 @@ function Navroutes() {
     <div>
       <Switch>
         <Route path="/" exact component={HomePage}></Route>
+        <Route path="/home" exact component={HomePage}></Route>
         <Route path="/searchmed" exact component={SearchMed}></Route>
         <Route path="/dashboard" exact component={Dashboard}></Route>
         <Route path="/profile-form" exact component={ProfileForm}></Route>
