@@ -1,3 +1,4 @@
-module.exports={
-    url:"mongodb://localhost:27017/project"
-}
+module.exports = {
+  url:
+    "mongodb+srv://akashdeep:Qwerty123@mongocluster.q4ztu.mongodb.net/project?retryWrites=true&w=majority",
+};

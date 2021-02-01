@@ -13,7 +13,7 @@ var medRouter = require("./routers/postMed-router");
 const db = require("./config/dbconfig");
 const dbConfig = db.url;
 mongoose
-  .connect(dbConfig)
+  .connect(dbConfig, { useNewUrlParser: true })
   .then(() => {
     console.log("Connected");
   })
