@@ -1,5 +1,7 @@
 var express = require("express");
 var app = express();
+const dotenv = require("dotenv");
+dotenv.config();
 var cors = require("cors");
 var mongoose = require("mongoose");
 var bodyparser = require("body-parser");
@@ -11,7 +13,7 @@ var profileRouter = require("./routers/profileRouter");
 var medRouter = require("./routers/postMed-router");
 
 const db = require("./config/dbconfig");
-const dbConfig = db.url;
+const dbConfig = process.env.MONGO_URL;
 mongoose
   .connect(dbConfig, { useNewUrlParser: true })
   .then(() => {
